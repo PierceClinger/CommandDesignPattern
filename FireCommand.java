@@ -9,7 +9,15 @@
 import java.util.concurrent.TimeUnit;
 import java.io.*;
 
-public class FireCommand implements command {
+public class FireCommand extends Player implements Command {
+    /**
+     * Class constructor
+     * @param player constructer parent class
+     */
+    public FireCommand(Player player) {
+        super(player);
+    }
+
     public void execute() {
         // Keeps track of current line in text file
         int line = 0;

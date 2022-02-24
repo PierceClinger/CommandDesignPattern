@@ -4,18 +4,22 @@
 
   /**
   * TimeUnit library is used to allow sleep method
-  * IO library is used to read fire text file
+  * IO library is used to read jump text file
   */
 import java.util.concurrent.TimeUnit;
 import java.io.*;
 
-public class JumpCommand implements command {
+public class JumpCommand implements Command {
+    /**
+     * Class constructor
+     * @param player constructer parent class
+     */
     public void execute() {
         // Keeps track of current line in text file
         int line = 0;
 
         try {
-            // Opens a bufferedReader for fire.txt
+            // Opens a bufferedReader for jump.txt
             BufferedReader html = new BufferedReader(new FileReader("./jump.txt"));
             
             String currLine;
