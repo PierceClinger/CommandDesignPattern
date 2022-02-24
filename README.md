@@ -2,4 +2,6 @@
 Write what you want to work on here...
 
 Pierce -> InputHandler
-Hayden -> RunCommand
+Ryan -> command, JumpCommand, FireCommand
+Hayden Bunce -> run command, player
+Hayden Boozer -> run command
