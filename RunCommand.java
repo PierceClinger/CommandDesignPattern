@@ -24,8 +24,9 @@ public class RunCommand implements Command {
     public void execute() {
         int line = 0;
         try {
+            String currentLine;
             BufferedReader reader = new BufferedReader(new FileReader("./run.txt"));
-            while(reader.readLine() != null) {
+            while((currentLine = reader.readLine()) != null) {
                 if (line % 3 == 0) {
                     sleep(4);
                     clear();
