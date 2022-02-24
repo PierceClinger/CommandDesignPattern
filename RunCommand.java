@@ -1,6 +1,11 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.concurrent.TimeUnit;
-import java.io.*;
 
+/**
+ * @author Hayden Boozer
+ * 
+ */
 public class RunCommand implements Command {
     RunCommand(Player player) {
         this.player = player;
