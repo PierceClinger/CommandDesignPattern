@@ -2,10 +2,10 @@
  * @author  Ryan Capron
  */
 
-  /**
-  * TimeUnit library is used to allow sleep method
-  * IO library is used to read jump text file
-  */
+/**
+ * TimeUnit library is used to allow sleep method
+ * IO library is used to read jump text file
+*/
 import java.util.concurrent.TimeUnit;
 import java.io.*;
 
@@ -13,7 +13,7 @@ public class JumpCommand implements Command {
     /**
      * Class constructor
      * @param player constructer parent class
-     */
+    */
     public void execute() {
         // Keeps track of current line in text file
         int line = 0;
@@ -41,7 +41,7 @@ public class JumpCommand implements Command {
     /**
      * Sleeps for $num milliseconds
      * @param num is number of milliseconds to sleep
-     */
+    */
     private void sleep(int num) {
         try {
             TimeUnit.MILLISECONDS.sleep(num);
@@ -52,7 +52,7 @@ public class JumpCommand implements Command {
     
     /**
      * Clear's the console to allow for next command to be read through
-     */
+    */
     private void clear() {
         System.out.print("\033[H\033[2J");
     }

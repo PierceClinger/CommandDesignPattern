@@ -1,11 +1,11 @@
 /**
  * @author  Ryan Capron
- */
+*/
 
- /**
-  * TimeUnit library is used to allow sleep method
-  * IO library is used to read fire text file
-  */
+/**
+ * TimeUnit library is used to allow sleep method
+ * IO library is used to read fire text file
+*/
 import java.util.concurrent.TimeUnit;
 import java.io.*;
 
@@ -13,7 +13,7 @@ public class FireCommand extends Player implements Command {
     /**
      * Class constructor
      * @param player constructer parent class
-     */
+    */
     public FireCommand(Player player) {
         super(player);
     }
@@ -45,7 +45,7 @@ public class FireCommand extends Player implements Command {
     /**
      * Sleeps for $num milliseconds
      * @param num is number of milliseconds to sleep
-     */
+    */
     private void sleep(int num) {
         try {
             TimeUnit.MILLISECONDS.sleep(num);
@@ -56,7 +56,7 @@ public class FireCommand extends Player implements Command {
     
     /**
      * Clear's the console to allow for next command to be read through
-     */
+    */
     private void clear() {
         System.out.print("\033[H\033[2J");
     }
