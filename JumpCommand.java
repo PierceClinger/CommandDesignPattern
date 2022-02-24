@@ -2,17 +2,26 @@
  * @author  Ryan Capron
  */
 
+  /**
+  * TimeUnit library is used to allow sleep method
+  * IO library is used to read fire text file
+  */
 import java.util.concurrent.TimeUnit;
 import java.io.*;
 
 public class JumpCommand implements command {
     public void execute() {
+        // Keeps track of current line in text file
         int line = 0;
+
         try {
-            String currLine;
+            // Opens a bufferedReader for fire.txt
             BufferedReader html = new BufferedReader(new FileReader("./jump.txt"));
+            
+            String currLine;
             while ((currLine = html.readLine()) != null) {
-                if(line % 6 == 0) {
+                // Sleeps and clears console every 3 lines
+                if(line % 3 == 0) {
                     sleep(5);
                     clear();
                 }
@@ -25,6 +34,10 @@ public class JumpCommand implements command {
         }    
     }
 
+    /**
+     * Sleeps for $num milliseconds
+     * @param num is number of milliseconds to sleep
+     */
     private void sleep(int num) {
         try {
             TimeUnit.MILLISECONDS.sleep(num);
@@ -33,6 +46,9 @@ public class JumpCommand implements command {
         }
     }
     
+    /**
+     * Clear's the console to allow for next command to be read through
+     */
     private void clear() {
         System.out.print("\033[H\033[2J");
     }
