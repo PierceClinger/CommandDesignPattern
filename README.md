@@ -3,6 +3,6 @@ Write what you want to work on here...
 
 Pierce -> InputHandler
 Ryan -> command, JumpCommand, FireCommand
-Hayden Bunce -> run command, player
+Hayden Bunce ->  player
 Hayden Boozer -> run command
 Danielle Higgins -> quit command
