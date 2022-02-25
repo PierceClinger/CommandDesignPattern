@@ -1,6 +1,6 @@
 /**
  * Interface for all command classes
  */
-public interface Command {
+public interface command {
     public void execute();
 }

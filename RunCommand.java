@@ -7,13 +7,15 @@ import java.util.concurrent.TimeUnit;
  * @author Hayden Boozer
  * 
  */
-public class RunCommand implements Command {
+public class RunCommand implements command {
+    private Player player;
+
     /**
      * Default Constructor: Sets the player to the current player
      * @param player The player that is passed in
      * 
      */
-    RunCommand(Player player) {
+    public RunCommand(Player player) {
         this.player = player;
     }
 

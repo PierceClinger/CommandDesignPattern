@@ -7,13 +7,20 @@
  * IO library is used to read jump text file
 */
 import java.util.concurrent.TimeUnit;
+
 import java.io.*;
 
-public class JumpCommand implements Command {
+public class JumpCommand implements command {
+    private Player player;
+
     /**
      * Class constructor
      * @param player constructer parent class
     */
+    public JumpCommand(Player player) {
+        this.player = player;
+    }
+
     public void execute() {
         // Keeps track of current line in text file
         int line = 0;

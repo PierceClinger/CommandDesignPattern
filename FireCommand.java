@@ -9,13 +9,15 @@
 import java.util.concurrent.TimeUnit;
 import java.io.*;
 
-public class FireCommand extends Player implements Command {
+public class FireCommand implements command {
+    private Player player;
+
     /**
      * Class constructor
      * @param player constructer parent class
     */
     public FireCommand(Player player) {
-        super(player);
+        this.player = player;
     }
 
     public void execute() {
