@@ -7,13 +7,19 @@ import java.io.*;
 /**
  * Player class contains the algorithms that read the files
  * 
- * 
  */
 public class Player {
+	/**
+	 * Default Constructor: Does nothing
+	 */
 	public Player() {
 		
 	}
 
+	/**
+	 * Reads the jump file and prints the animation to the console
+	 * 
+	 */
 	public void jump() {
 		// Keeps track of current line in text file
         int line = 0;
@@ -38,6 +44,10 @@ public class Player {
         }
 	}
 
+	/**
+	 * Reads the fire file and prints the animation to the console
+	 * 
+	 */
 	public void fire() {
 		// Keeps track of current line in text file
         int line = 0;
@@ -62,6 +72,10 @@ public class Player {
         }
 	}
 
+	/**
+	 * Reads the run file and prints the animation to the console
+	 * 
+	 */
 	public void runForward() {
 		int line = 0;
         try {
