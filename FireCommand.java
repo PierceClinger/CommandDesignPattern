@@ -2,13 +2,6 @@
  * @author  Ryan Capron
 */
 
-/**
- * TimeUnit library is used to allow sleep method
- * IO library is used to read fire text file
-*/
-import java.util.concurrent.TimeUnit;
-import java.io.*;
-
 public class FireCommand implements command {
     private Player player;
 
@@ -21,6 +14,7 @@ public class FireCommand implements command {
     }
 
     public void execute() {
+<<<<<<< HEAD
         // Keeps track of current line in text file
         int line = 0;
 
@@ -32,7 +26,7 @@ public class FireCommand implements command {
             while ((currLine = html.readLine()) != null) {
                 // Sleeps and clears console every 3 lines
                 if(line % 3 == 0) {
-                    sleep(50);
+                    sleep(5);
                     clear();
                 }
                 line++;
@@ -61,6 +55,9 @@ public class FireCommand implements command {
     */
     private void clear() {
         System.out.print("\033[H\033[2J");
+=======
+        player.fire();    
+>>>>>>> cdd3825365871ea212a4fc79133281f3dbdb7ac2
     }
     
 }
