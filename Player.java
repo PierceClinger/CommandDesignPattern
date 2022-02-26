@@ -1,6 +1,11 @@
 import java.util.concurrent.TimeUnit;
 import java.io.*;
 
+/**
+ * Player class contains the algorithms that read the files
+ * 
+ * 
+ */
 public class Player {
 	public Player() {
 		
@@ -16,8 +21,8 @@ public class Player {
             
             String currLine;
             while ((currLine = html.readLine()) != null) {
-                // Sleeps and clears console every 3 lines
-                if(line % 3 == 0) {
+                // Sleeps and clears console every 6 lines
+                if(line % 6 == 0) {
                     sleep(100);
                     clear();
                 }
@@ -66,7 +71,7 @@ public class Player {
                 } else {
                     line++;
                 }
-                System.out.println(reader.readLine());
+                System.out.println(currentLine);
             }
             reader.close();
         } catch (Exception e) {
