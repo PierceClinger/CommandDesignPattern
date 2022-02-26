@@ -68,9 +68,8 @@ public class Player {
                 if (line % 3 == 0) {
                     sleep(100);
                     clear();
-                } else {
-                    line++;
                 }
+                line++;
                 System.out.println(currentLine);
             }
             reader.close();
