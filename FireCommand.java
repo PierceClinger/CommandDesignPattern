@@ -32,7 +32,7 @@ public class FireCommand implements command {
             while ((currLine = html.readLine()) != null) {
                 // Sleeps and clears console every 3 lines
                 if(line % 3 == 0) {
-                    sleep(5);
+                    sleep(50);
                     clear();
                 }
                 line++;
